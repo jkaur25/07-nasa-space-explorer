@@ -29,7 +29,7 @@ getImagesBtn.addEventListener("click", async () => {
 
   for (let date of dateArray) {
     try {
-      const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=bF0cdgSW7PRoUwtPe0Qd1LVKNm6QpRdv4aIdKrnU &date=${date}`);
+      const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=bF0cdgSW7PRoUwtPe0Qd1LVKNm6QpRdv4aIdKrnU&date=${date}`);
       const data = await response.json();
       if (data.media_type === "image") {
         gallery.innerHTML += `
