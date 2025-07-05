@@ -40,6 +40,15 @@ h1 {
   margin-right: 15px;
 }
 
+/* Space Fact */
+.space-fact {
+  text-align: center;
+  font-size: 18px;
+  color: #0b3d91; /* NASA blue */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 /* Date-picker & button row */
 .filters {
   display: flex;
@@ -123,7 +132,7 @@ button:hover {
   transition: transform 0.3s ease;
 }
 .gallery-item img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Hover Zoom LevelUp */
 }
 
 .gallery-item p {

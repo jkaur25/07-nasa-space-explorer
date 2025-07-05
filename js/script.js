@@ -11,6 +11,23 @@ setupDateInputs(startInput, endInput);
 const gallery = document.getElementById("gallery");
 const getImagesBtn = document.getElementById("getImagesBtn");
 
+// Random Space Fact LevelUp
+const spaceFacts = [
+  "Did you know? Jupiter’s Great Red Spot is a giant storm bigger than Earth!",
+  "Did you know? A day on Venus is longer than a year on Venus.",
+  "Did you know? There are more stars in the universe than grains of sand on Earth.",
+  "Did you know? Neutron stars can spin 600 times per second.",
+  "Did you know? NASA’s Voyager 1 is the farthest human-made object from Earth."
+];
+
+function displayRandomFact() {
+  const factElement = document.getElementById("spaceFact");
+  const randomFact = spaceFacts[Math.floor(Math.random() * spaceFacts.length)];
+  factElement.textContent = randomFact;
+}
+// Call once when the page loads
+displayRandomFact();
+
 getImagesBtn.addEventListener("click", async () => {
   const startDate = startInput.value;
   const endDate = endInput.value;
